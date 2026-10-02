@@ -21,7 +21,11 @@ jobs:
           distribution: temurin
           java-version: 21
 
+      # Accepts the SDK licences; Gradle then installs the exact platform and build-tools it needs.
+      # The action's default package list includes "tools", which no longer exists and fails.
       - uses: android-actions/setup-android@v3
+        with:
+          packages: platform-tools
 
       - uses: gradle/actions/setup-gradle@v4
 
