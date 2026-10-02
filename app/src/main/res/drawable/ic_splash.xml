@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<vector xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="108dp"
+    android:height="108dp"
+    android:viewportWidth="108"
+    android:viewportHeight="108">
+    <path android:pathData="M54,18a36,36 0,1 1,0 72a36,36 0,1 1,0 -72z">
+        <aapt:attr name="android:fillColor">
+            <gradient
+                android:type="linear"
+                android:startX="24" android:startY="18"
+                android:endX="84" android:endY="90">
+                <item android:offset="0" android:color="#FF3F9BFF" />
+                <item android:offset="0.55" android:color="#FF2F6BF2" />
+                <item android:offset="1" android:color="#FF5A4FD8" />
+            </gradient>
+        </aapt:attr>
+    </path>
+    <group android:pivotX="54" android:pivotY="54" android:scaleX="0.62" android:scaleY="0.62">
+
+    <!-- outer ring -->
+    <path
+        android:pathData="M54,33.5a20.5,20.5 0,1 1,0 41a20.5,20.5 0,1 1,0 -41z"
+        android:strokeWidth="3.4"
+        android:strokeColor="#FFFFFFFF"
+        android:fillColor="#00000000" />
+    <!-- crosshair ticks -->
+    <path
+        android:pathData="M54,24.5L54,31M54,77L54,83.5M24.5,54L31,54M77,54L83.5,54"
+        android:strokeWidth="3.4"
+        android:strokeLineCap="round"
+        android:strokeColor="#FFFFFFFF" />
+    <!-- inner fine cross -->
+    <path
+        android:pathData="M54,47.5L54,60.5M47.5,54L60.5,54"
+        android:strokeWidth="1.6"
+        android:strokeLineCap="round"
+        android:strokeColor="#B3FFFFFF" />
+    <!-- the bubble, slightly off-centre -->
+    <path
+        android:pathData="M60,41.5a7.5,7.5 0,1 1,0 15a7.5,7.5 0,1 1,0 -15z"
+        android:fillColor="#FFFFFFFF" />
+    </group>
+</vector>
